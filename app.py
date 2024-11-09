@@ -2,7 +2,8 @@ import streamlit as st
 from transformers import pipeline
 
 # Load the BART model for text summarization from Hugging Face
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+summarizer = pipeline("summarization", model="facebook/distilbert-base-uncased")
+
 
 # Streamlit app layout
 st.title("Text Summarization Tool")
